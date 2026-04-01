@@ -2,48 +2,27 @@
 <html lang="pt-BR">
 
 <head>
-  <style>
-    p {
-      color: green;
-    }
-  </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viagem dos Sonhos</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-        <li>Pacotes</li>
-        <li>Taxas</li>
-        <li>Contato</li>
+        <li><a href="#">Pacotes</a></li>
+        <li><a href="#">Taxas</a></li>
+        <li><a href="#">Contato</a></li>
       </ul>
     </nav>
-    <h1 style="color: red">Venha realizar a viagem dos seus sonhos!</h1>
+    <h1>Venha realizar a viagem dos seus sonhos!</h1>
   </header>
-  <section>
+
+  <section id="pacotes">
     <h2>Conheça nossos pacotes</h2>
-    <p style="color: blue">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, elit eu aliquet faucibus, purus
-      neque porttitor massa, eu dignissim nulla dui a eros. Integer egestas diam nec ultricies elementum. Morbi
-      pellentesque quam vel lacus fermentum vestibulum. Suspendisse mauris ex, vestibulum eget nibh nec, faucibus
-      ullamcorper mauris. Aenean vel lacus non orci hendrerit lobortis. Sed dapibus neque eu ipsum pulvinar
-      egestas.
-      Mauris pellentesque, elit vitae mattis venenatis, erat felis ultricies libero, eu porttitor ante lectus nec
-      augue. Integer sagittis est turpis, tempor malesuada metus ultrices nec. Sed dapibus ut nibh vel
-      condimentum. In
-      hac habitasse platea dictumst. Phasellus rutrum iaculis ex ac pellentesque. Proin nec fermentum velit.
-      Suspendisse rutrum magna non metus tristique varius. Suspendisse rhoncus congue nulla in hendrerit. Ut ac
-      tellus
-      in magna viverra blandit ac a velit. Quisque finibus eros tellus, quis dictum urna auctor sed.
-      <br><br>
-      <a href="https://br.lipsum.com/">Link</a>
-      <hr>
-    </p>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, elit eu aliquet faucibus, purus
       neque porttitor massa, eu dignissim nulla dui a eros. Integer egestas diam nec ultricies elementum. Morbi
@@ -61,47 +40,37 @@
       <a href="https://br.lipsum.com/">Link</a>
       <hr>
     </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, elit eu aliquet faucibus, purus
-      neque porttitor massa, eu dignissim nulla dui a eros. Integer egestas diam nec ultricies elementum. Morbi
-      pellentesque quam vel lacus fermentum vestibulum. Suspendisse mauris ex, vestibulum eget nibh nec, faucibus
-      ullamcorper mauris. Aenean vel lacus non orci hendrerit lobortis. Sed dapibus neque eu ipsum pulvinar
-      egestas.
-      Mauris pellentesque, elit vitae mattis venenatis, erat felis ultricies libero, eu porttitor ante lectus nec
-      augue. Integer sagittis est turpis, tempor malesuada metus ultrices nec. Sed dapibus ut nibh vel
-      condimentum. In
-      hac habitasse platea dictumst. Phasellus rutrum iaculis ex ac pellentesque. Proin nec fermentum velit.
-      Suspendisse rutrum magna non metus tristique varius. Suspendisse rhoncus congue nulla in hendrerit. Ut ac
-      tellus
-      in magna viverra blandit ac a velit. Quisque finibus eros tellus, quis dictum urna auctor sed.
-      <br><br>
-      <a href="https://br.lipsum.com/">Link</a>
-      <hr>
-    </p>
-    <figure>
-      <img src="img/nossos-pacotes/gramado.jpeg" alt="Imagem de chalé em Gramado">
-      <figcaption>Gramado</figcaption>
-    </figure>
-    <figure>
-      <img src="img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
-      <figcaption>Porto Seguro</figcaption>
-    </figure>
-    <figure>
-      <img src="img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
-      <figcaption>Rio de Janeiro</figcaption>
-    </figure>
+
+    <div class="figuras">
+      <figure>
+        <img src="img/nossos-pacotes/gramado.jpeg" alt="Imagem de chalé em Gramado">
+        <figcaption>Gramado</figcaption>
+      </figure>
+      <figure>
+        <img src="img/nossos-pacotes/porto-seguro.jpeg" alt="Praia em Porto Seguro">
+        <figcaption>Porto Seguro</figcaption>
+      </figure>
+      <figure>
+        <img src="img/nossos-pacotes/rio-de-janeiro.jpeg" alt="Rio de Janeiro visto de cima">
+        <figcaption>Rio de Janeiro</figcaption>
+      </figure>
+    </div>
+
+    <div class="videos">
+      <video controls width="500px">
+        <source src="video/rabbit320.mp4" type="video/mp4">
+        <source src="video/rabbit320.webm" type="video/webm">
+        Seu navegador não suporta o formato do vídeo. <a href="video/rabbit320.mp4">Clique aqui para baixar</a>
+      </video>
+    </div>
   </section>
-  <video controls width="500px">
-    <source src="video/rabbit320.mp4" type="video/mp4">
-    <source src="video/rabbit320.webm" type="video/webm">
-    Seu navegador não suporta o formato do vídeo. <a href="video/rabbit320.mp4">Clique aqui para baixar</a>
-  </video>
+
   <section>
     <h2>Taxas e serviços</h2>
     <p>
       Veja nossas taxas para serviços
     </p>
-    <table border>
+    <table>
       <caption>Descrição dos serviços e respectivos valores</caption>
       <thead>
         <tr>
@@ -125,6 +94,7 @@
       </tbody>
     </table>
   </section>
+
   <section>
     <h2>Orçamento</h2>
     <form method="GET" action="">
@@ -188,6 +158,7 @@
       <button>Salvar</button>
     </form>
   </section>
+
   <footer>
     <p>Desenvolvido por Raphaelly Valiengo</p>
   </footer>
